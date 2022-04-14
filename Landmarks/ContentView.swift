@@ -9,9 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+      VStack(alignment: .leading) {
         Text("Brandenburger Tor")
-        .font(.title)
-        
+          .font(.title)
+        HStack {
+          Text("Symbol der Wiedervereinigung")
+            .font(.subheadline)
+          Spacer()
+          Text("Berlin")
+            .font(.subheadline)
+        }
+      }
+      .padding()
     }
 }
 
