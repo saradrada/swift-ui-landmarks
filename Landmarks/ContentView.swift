@@ -9,18 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-      VStack(alignment: .leading) {
-        Text("Brandenburger Tor")
-          .font(.title)
-        HStack {
-          Text("Symbol der Wiedervereinigung")
-            .font(.subheadline)
-          Spacer()
-          Text("Berlin")
-            .font(.subheadline)
+
+      VStack {
+        MapView()
+          .ignoresSafeArea(edges: .top)
+          .frame(height: 300)
+
+        CircleImage()
+          .offset(y: -70)
+          .padding(.bottom, -70)
+
+        VStack(alignment: .leading) {
+          Text("Brandenburger Tor")
+            .font(.title)
+
+          HStack {
+            Text("Symbol der Wiedervereinigung")
+            Spacer()
+            Text("Berlin")
+          }
+          .font(.subheadline)
+          .foregroundColor(.secondary)
+
+          Divider()
+
+          Text("About Brandenburg Tor")
+            .font(.title2)
+          Text("Description goes here.")
         }
+
+        .padding()
+
+        Spacer()
       }
-      .padding()
     }
 }
 
