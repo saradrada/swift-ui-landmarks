@@ -16,24 +16,24 @@ struct ContentView: View {
           .frame(height: 300)
 
         CircleImage()
-          .offset(y: -70)
-          .padding(.bottom, -70)
+          .offset(y: -130)
+          .padding(.bottom, -130)
 
         VStack(alignment: .leading) {
-          Text("Brandenburger Tor")
+          Text("Turtle Rock")
             .font(.title)
 
           HStack {
-            Text("Symbol der Wiedervereinigung")
+            Text("Joshua Tree National Park")
             Spacer()
-            Text("Berlin")
+            Text("California")
           }
           .font(.subheadline)
           .foregroundColor(.secondary)
 
           Divider()
 
-          Text("About Brandenburg Tor")
+          Text("About Turtle Rock")
             .font(.title2)
           Text("Description goes here.")
         }
